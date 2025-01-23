@@ -1,11 +1,12 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="ja">
 <head>
+	<meta charset="Shift_JIS">
 	<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
 	<meta http-equiv="Content-Style-Type" content="text/css">
 	<meta http-equiv="Content-Script-Type" content="text/javascript">
 	<meta name="robots" content="noindex,nofollow">
-	<title>Faredio 2.0 ƒf[ƒ^ƒrƒ…[ƒA[</title>
+	<title>Faredio 2.0 ãƒ‡ãƒ¼ã‚¿ãƒ“ãƒ¥ãƒ¼ã‚¢ãƒ¼</title>
 	<style type="text/css">
 	<!--
 	table.DATA_F {
@@ -42,23 +43,23 @@
 <!--
 	var D = window.document;
 
-	//®—‚µ‚½î•ñ‚ğŠi”[
+	//æ•´ç†ã—ãŸæƒ…å ±ã‚’æ ¼ç´
 	var buf = location.search.replace(/\x3ffn=/,"");
 	var splitbuf = buf.split("/");
 	var fileName = splitbuf[splitbuf.length - 1];
 	
-	//JavaScript ‚ğ“Ç‚İ‚Ş
+	//JavaScript ã‚’èª­ã¿è¾¼ã‚€
 	D.write('<script type="text/javascript" src="../datas/' + fileName + '"><\/script>');
 //-->
 </script>
 	<script type="text/javascript">
 	<!--
-	D.write("<h1>ƒf[ƒ^–¼F<span style='background-color:#FFFF80;padding:3px;'>" + dataName + "</span><\/h1>");
-	// dataFileName ‚ªƒtƒ@ƒCƒ‹–¼‚Æ•sˆê’v‚Ì‚Æ‚«‚ÉŒx‚ğ•\¦‚·‚é
+	D.write("<h1>ãƒ‡ãƒ¼ã‚¿åï¼š<span style='background-color:#FFFF80;padding:3px;'>" + dataName + "</span><\/h1>");
+	// dataFileName ãŒãƒ•ã‚¡ã‚¤ãƒ«åã¨ä¸ä¸€è‡´ã®ã¨ãã«è­¦å‘Šã‚’è¡¨ç¤ºã™ã‚‹
 	if (dataFileName != fileName)
 	{
 		D.write('<div class="warningBox">');
-		D.write('dataFileName ‚Ìw’è‚ªAƒf[ƒ^ƒtƒ@ƒCƒ‹–¼‚Æˆê’v‚µ‚Ä‚¢‚Ü‚¹‚ñBƒf[ƒ^ƒtƒ@ƒCƒ‹“à‚Ì‹Lq‚ğŠm”F‚µ‚Ä‰º‚³‚¢B<br>');
+		D.write('dataFileName ã®æŒ‡å®šãŒã€ãƒ‡ãƒ¼ã‚¿ãƒ•ã‚¡ã‚¤ãƒ«åã¨ä¸€è‡´ã—ã¦ã„ã¾ã›ã‚“ã€‚ãƒ‡ãƒ¼ã‚¿ãƒ•ã‚¡ã‚¤ãƒ«å†…ã®è¨˜è¿°ã‚’ç¢ºèªã—ã¦ä¸‹ã•ã„ã€‚<br>');
 		D.write('dataFileName=<strong>"'+dataFileName+'"</strong>;  designated in <strong>'+fileName+'</strong>');
 		D.write('</div>');
 	}
@@ -66,15 +67,15 @@
 	//-->
 	</script>
 	
-<h1>‰wˆê——</h1>
+<h1>é§…ä¸€è¦§</h1>
 	<script type="text/javascript">
 	<!--
 	D.writeln("<table class=\"DATA_F\">");
 	D.write("<tr>");
-	D.write("<th class=\"DATA_I\">‰w”Ô†<\/th>");
-	D.write("<th class=\"DATA_I\">‰w–¼<\/th>");
-	D.write("<th class=\"DATA_I\">ƒ[ƒ}š<\/th>");
-	D.write("<th class=\"DATA_I\">‰wƒiƒ“ƒoƒŠƒ“ƒO<\/th>");
+	D.write("<th class=\"DATA_I\">é§…ç•ªå·<\/th>");
+	D.write("<th class=\"DATA_I\">é§…å<\/th>");
+	D.write("<th class=\"DATA_I\">ãƒ­ãƒ¼ãƒå­—<\/th>");
+	D.write("<th class=\"DATA_I\">é§…ãƒŠãƒ³ãƒãƒªãƒ³ã‚°<\/th>");
 	D.writeln("<\/tr>");
 	for (var i=0; i<stationList.staList.length; i++) {
 		if (stationList.staList[i]!=undefined) {
@@ -90,9 +91,9 @@
 	//-->
 	</script>
 	
-<h1><a name="testerpos">“®ìŠm”F</a></h1>
+<h1><a name="testerpos">å‹•ä½œç¢ºèª</a></h1>
 	
-	<!-- ŒŸõƒtƒH[ƒ€ -->
+	<!-- æ¤œç´¢ãƒ•ã‚©ãƒ¼ãƒ  -->
 	<form name="tform" action="showresult.html">
 	<input type="hidden" name="vl">
 	<input type="hidden" name="gl">
@@ -100,20 +101,20 @@
 	<input type="hidden" name="arv">
 	<input type="hidden" name="dir" value="../">
 	<input type="radio" name="slSta" value="lev" checked="checked" id="levR">
-	”­‰wF<input type="text" name="levF" readonly="readonly">
+	ç™ºé§…ï¼š<input type="text" name="levF" readonly="readonly">
 	<input type="radio" name="slSta" value="arv" id="arvR">
-	’…‰wF<input type="text" name="arvF" readonly="readonly">
+	ç€é§…ï¼š<input type="text" name="arvF" readonly="readonly">
 	<script type="text/javascript">
 	<!--
 	D.write('<input type="hidden" value="' + fileName + '" name="fn">');
 	//-->
 	</script>
-	<input type="submit" value="ŒŸõŒ‹‰Ê‚ğ•\¦">
+	<input type="submit" value="æ¤œç´¢çµæœã‚’è¡¨ç¤º">
 	</form>
 	
 	<script type="text/javascript">
 	<!--
-	//æÔ‰wE~Ô‰w‚ğw’è‚·‚éŠÖ”
+	//ä¹—è»Šé§…ãƒ»é™è»Šé§…ã‚’æŒ‡å®šã™ã‚‹é–¢æ•°
 	function setLA(lIdx, sIdx)
 	{
 		if (D.tform.levR.checked) {
@@ -136,25 +137,25 @@
 	*/
 	
 	D.writeln("<table class=\"DATA_F\">");
-	//˜Hüˆê——‚ğ•\¦
+	//è·¯ç·šä¸€è¦§ã‚’è¡¨ç¤º
 	D.writeln("<tr>");
-	//D.writeln("<tr><th class=\"DATA_I\">‰w”Ô†<\/th>");
+	//D.writeln("<tr><th class=\"DATA_I\">é§…ç•ªå·<\/th>");
 	for (var k = 0; k < lines.length; k++)
 	{
-		//D.writeln("<th class=\"DATA_I\">‰wŠÔ<\/th>");
-		D.writeln("<th class=\"DATA_I\" colspan=\"2\">" + k + "F" + lines[k].name + "<br><span style='font-weight:normal;'>‰^’À‹K’è[" + lines[k].fareRule + "]</span><\/th>");
+		//D.writeln("<th class=\"DATA_I\">é§…é–“<\/th>");
+		D.writeln("<th class=\"DATA_I\" colspan=\"2\">" + k + "ï¼š" + lines[k].name + "<br><span style='font-weight:normal;'>é‹è³ƒè¦å®š[" + lines[k].fareRule + "]</span><\/th>");
 	}
 	D.writeln("<\/tr>");
 
 	D.writeln("<tr>");
 	for (var k = 0; k < lines.length; k++)
 	{
-		D.writeln("<th class=\"DATA_I\">‰w–¼<\/th>");
-		D.writeln("<th class=\"DATA_I\">‰wŠÔƒLƒ<\/th>");
+		D.writeln("<th class=\"DATA_I\">é§…å<\/th>");
+		D.writeln("<th class=\"DATA_I\">é§…é–“ã‚­ãƒ­<\/th>");
 	}
 	D.writeln("<\/tr>");
 
-	//ƒf[ƒ^‚ğ•\¦
+	//ãƒ‡ãƒ¼ã‚¿ã‚’è¡¨ç¤º
 	for (var i = 0; i < MAXSTACT; i++)
 	{
 		D.writeln("<tr>");
@@ -162,7 +163,7 @@
 		{
 			if (lines[j].staNum[i] == undefined) {
 				D.writeln("<td class=\"DATA_I\">-<\/td>");
-				D.writeln("<td class=\"DATA_K\" style=\"text-align:center;\">EE<\/td>");
+				D.writeln("<td class=\"DATA_K\" style=\"text-align:center;\">ãƒ»ãƒ»<\/td>");
 			}
 			else {
 				staNumBuf = lines[j].staNum[i];
@@ -177,7 +178,7 @@
 				}
 				D.writeln("<\/td>");
 				if (lines[j].roadK[i] == undefined)
-					D.writeln("<td class=\"DATA_K\"><\/td>");
+					D.writeln("<td class=\"DATA_K\">ï¼ï¼<\/td>");
 				else
 					D.writeln("<td class=\"DATA_K\">" + lines[j].roadK[i] + "<\/td>");
 			}
@@ -188,24 +189,24 @@
 	//-->
 	</script>
 
-<h1>‰^’À‹K’è</h1>
+<h1>é‹è³ƒè¦å®š</h1>
 	<script type="text/javascript">
 	<!--
   for (var pi = 0; pi < fareRule.length; pi++)
   {
 	D.writeln("<table class=\"DATA_F\">");
-	D.writeln("<caption>‰^’À‹K’è[" + pi + "]<\/caption>");
-	//ƒf[ƒ^
+	D.writeln("<caption>é‹è³ƒè¦å®š[" + pi + "]<\/caption>");
+	//ãƒ‡ãƒ¼ã‚¿
 	D.writeln("<tr>");
-	D.writeln("<th class=\"DATA_I\">ƒLƒ’ö<\/th>");
-	D.writeln("<th class=\"DATA_I\">‰^’À(ICƒJ[ƒh)<\/th>");
-	D.writeln("<th class=\"DATA_I\">‰^’À(æÔŒ”)<\/th>");
+	D.writeln("<th class=\"DATA_I\">ã‚­ãƒ­ç¨‹<\/th>");
+	D.writeln("<th class=\"DATA_I\">é‹è³ƒ(ICã‚«ãƒ¼ãƒ‰)<\/th>");
+	D.writeln("<th class=\"DATA_I\">é‹è³ƒ(ä¹—è»Šåˆ¸)<\/th>");
 	D.writeln("<\/tr>");
 	
 	for (var i = 0; i < fareRule[pi].fareRows.length; i++)
 	{
 		D.writeln("<tr>");
-		D.writeln("<td class=\"DATA_I\">" + fareRule[pi].fareRows[i].minK + "km ` " + fareRule[pi].fareRows[i].maxK + "km<\/td>");
+		D.writeln("<td class=\"DATA_I\">" + fareRule[pi].fareRows[i].minK + "km ï½ " + fareRule[pi].fareRows[i].maxK + "km<\/td>");
 		D.writeln("<td class=\"DATA_I\">\\" + fareRule[pi].fareRows[i].fare + "<\/td>");
 		D.writeln("<td class=\"DATA_I\">\\" + fareRule[pi].fareRows[i].getTicketFare(fareRule[pi].ICmode) + "<\/td>");
 		//D.writeln("<td class=\"DATA_I\">\\" + fareRule[pi].fareRows[i].getTicketFare(1) + "<\/td>");
@@ -217,25 +218,25 @@
 	//-->
 	</script>
 
-<h1>“Á’è‰^’À</h1>
+<h1>ç‰¹å®šé‹è³ƒ</h1>
 	<script type="text/javascript">
 	<!--
 	D.writeln("<table class=\"DATA_F\">");
 	D.writeln("<tr>");
-	//D.writeln("<th class=\"DATA_I\">‰wŠÔ<\/th>");
-	D.writeln("<th class=\"DATA_I\">“K—pŒo˜H<\/th>");
-	D.writeln("<th class=\"DATA_I\">‰^’À(ICƒJ[ƒh)<\/th>");
-	D.writeln("<th class=\"DATA_I\">‰^’À(æÔŒ”)<\/th>");
+	//D.writeln("<th class=\"DATA_I\">é§…é–“<\/th>");
+	D.writeln("<th class=\"DATA_I\">é©ç”¨çµŒè·¯<\/th>");
+	D.writeln("<th class=\"DATA_I\">é‹è³ƒ(ICã‚«ãƒ¼ãƒ‰)<\/th>");
+	D.writeln("<th class=\"DATA_I\">é‹è³ƒ(ä¹—è»Šåˆ¸)<\/th>");
 	D.writeln("<\/tr>");
 	for (var i=0; i<specificFare.length; i++) {
 		D.writeln("<tr>");
 		D.writeln("<td class=\"DATA_I\" style=\"width:400px;\">");
 		for (var j=0; j<specificFare[i].via.length; j++) {
-			if (j%2) D.write("¨" + lines[specificFare[i].via[j]].name + "¨");
+			if (j%2) D.write("â†’" + lines[specificFare[i].via[j]].name + "â†’");
 			else D.write(stationList.staList[specificFare[i].via[j]].name);
 		}
 		D.writeln("<\/td>");
-		//D.writeln("<td class=\"DATA_I\">" + stationList.staList[specificFare[i].sta1].name + " ` " + stationList.staList[specificFare[i].sta2].name + "<\/td>");
+		//D.writeln("<td class=\"DATA_I\">" + stationList.staList[specificFare[i].sta1].name + " ï½ " + stationList.staList[specificFare[i].sta2].name + "<\/td>");
 		D.writeln("<td class=\"DATA_I\">\\" + specificFare[i].fareIC + "<\/td>");
 		D.writeln("<td class=\"DATA_I\">\\" + specificFare[i].fareTicket + "<\/td>");
 		D.writeln("<\/tr>");
